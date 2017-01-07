@@ -1,0 +1,104 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,400italic);
+
+body {
+	margin: 0; padding: 0;
+	font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 1.25em;
+	color: #625c3c; background-color: #fff; 
+}
+header { text-align: center; padding: 0px 0 15px 0; background-color: #e7e2c9; }
+header::before {
+	content: ''; display: block; height: 85px; margin-bottom: 15px;
+	background: #000 url(../images/cityscape.jpg) no-repeat center top;
+}
+header h1 {
+	color: #000;
+	font-weight: 300;
+	font-size: 2em;
+	background: url(../images/paris.svg) no-repeat 50% .9em;
+	padding: 0 0 100px 0;
+	margin: 0;
+}
+header h1 span { display: none; }
+article.attractions { width: 80%; margin: 35px auto 75px auto; }
+article.attractions::after { content:''; display: block; clear: both; }
+article.attractions aside { width: 33%; float: left; text-align: center; min-height: 140px; }
+article.attractions aside > div { padding: 0 40px; }
+article.attractions aside > div > h3 { font-weight: 300; font-size: 1.6em; line-height: 1em; margin: 0 0 15px 0; }
+article.attractions aside > div > h5 { font-size: 1.2em; font-weight: 300; margin: 0 0 1em 0; }
+article.attractions aside > div img { width: 155px; border-radius: 50%; border: 10px solid rgba(227,223,202,1); margin-bottom: 15px; }
+article.attractions aside > div p { text-align: left; }
+footer { border-top: 2px solid #e7e2c9; height: 75px; color: rgba(0,0,0,.3); padding: 10px; text-align: center; font-size: .9em; }
+
+
+/* CSS for Expanding Panels */
+
+
+.exapnding_panel .exapnding_panel_trigger{
+
+	cursor: pointer;
+	color: #00a5d5;
+	font-weight: 600;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select:none;
+
+}
+
+.exapnding_panel .exapnding_panel_trigger:hover{
+
+	color: #555;
+	text-decoration: underline;
+}
+
+.exapnding_panel .exapnding_panel_trigger::before{
+
+	content: '+ ';
+	padding-right: 5px;
+
+
+}
+
+.exapnding_panel.open .exapnding_panel_trigger::before{
+
+
+	content: '\2013';/* - dash*/
+ 
+}
+
+
+.exapnding_panel .exapnding_panel_content_container{
+
+	overflow: hidden;
+}
+
+.exapnding_panel .exapnding_panel_content{
+
+	padding: 1px 0;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+	article.attractions { width: 95%; }
+}
+@media screen and (max-width: 900px) {
+	article.attractions { width: 100%; }
+	article.attractions aside { width: 100%; float: none; text-align: left; }
+	article.attractions aside > div { position: relative; padding: 20px 20px 0 220px; margin-bottom: 75px; }
+	article.attractions aside > div h3 { margin-bottom: 5px; }
+	article.attractions aside > div img { position: absolute; top: 0px; left: 25px; }
+}
+@media screen and (max-width: 600px) {
+	header::before { height: 60px; background-size: auto 60px; }
+	header h1 { padding-bottom: 60px; background-size: 300px 52px; }
+	article.attractions aside > div { padding: 0 25px 0 35px; margin-bottom: 50px; }
+	article.attractions aside > div img { width: 140px; border-width: 8px; position: static; margin-bottom: 5px; margin-left: -20px; }
+}
+
+
