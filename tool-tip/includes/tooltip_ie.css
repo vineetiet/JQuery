@@ -1,0 +1,12 @@
+
+
+/* Rules for IE 7 & 8 */
+
+#tooltip_container{
+
+	width: 200px; /*IE7, 7=8 does not support max-width*/
+	background: none;
+	background-image: url(../images/ie_transparency.png);
+}
+
+

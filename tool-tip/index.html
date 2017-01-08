@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>jQuery Dropdown Menus</title>
+		<link rel="stylesheet" type="text/css" href="includes/tooltip.css" />
+		<script type="text/javascript" src="includes/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="includes/tooltip.js"></script>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<link rel="stylesheet" type="text/css" href="includes/tooltip_ie.css" />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<a class="logo tooltip" href="#" data-tip-type="text" data-tip-source="This is the logo"></a>
+			</header>
+			<article>
+				<h1>Heading</h1>
+				<aside>
+					<h2>Aside Heading</h2>
+					<p>Lorem ipsum dolor sit amet consectetur <a href="#" data-tip-type="html" 
+					data-tip-source="tooltip-sidebar" class="tooltip">HTML-based tooltip</a> adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</aside>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <a href="#" data-tip-type="text" data-tip-source="This is text for tooltip" class="tooltip">text-based tooltip</a> laboris nisi ut aliquip consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="clear-all"></div>
+			</article>
+			<footer>Your company name.</footer>
+
+			<div id="tooltip_container">
+					
+			This is my tooltip
+
+			</div>
+
+			<!-- tool tip container -->
+			<div class="tooltip-html-source"> <!-- We can store html data for tooltip, inside data-tip-source attribute we can put text based information, but we can't put HTML content in here. So we want to formt tooltip may be change the color, use bold type, bring in images. We have to do in html. So we can't but html inside the data-tip-source attribute, so we are creating the html container that will hold all html data that we want pull from for tips -->
+				
+				<div id="tooltip-sidebar">
+
+				<img src="images/sample.gif" style="float: left"/>This is a tip that has <strong><em style="color: #ffe19a;">HTML-formatted</em></strong> content, including an image.
+				<div class="clear-all"></div>
+					
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
