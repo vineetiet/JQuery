@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Interactive Infographic</title>
+		<link rel="stylesheet" type="text/css" href="includes/interactive_map.css" />
+		<script type="text/javascript" src="includes/jquery-1.5.min.js"></script>
+		<script type="text/javascript" src="includes/interactive_map.js"></script>
+	</head>
+	<body>
+
+			<div class="map_container">
+				
+				<a class="dot" style="left:178px; top:166px;" continent="SA" city="riodejaneiro"></a>
+				<a class="dot" style="left:236px; top:72px;" continent="EU" city="london"></a>
+				<a class="dot" style="left:426px; top:181px;" continent="AU" city="sydney"></a>
+				<a class="dot" style="left:415px; top:91px;" continent="AS" city="tokyo"></a>
+				<a class="dot" style="left:271px; top:171px;" continent="AF" city="capetown"></a>
+				<a class="dot" style="top:99px;  left:113px;" continent="NA" city="dallas"></a>
+				<a class="dot" style="top:83px;  left:87px;"  continent="NA" city="seattle"></a>
+				<a class="dot" style="top:173px; left:387px;" continent="AU" city="perth" ></a>
+				<a class="dot" style="top:102px; left:271px;" continent="AF" city="tripoli"></a>
+				<a class="dot" style="top:134px; left:153px;" continent="SA" city="bogota"></a>
+				<a class="dot" style="top:93px;  left:141px;" continent="NA" city="newyorkcity"></a>
+				<a class="dot" style="top:115px; left:375px;" continent="AS" city="phompenh"></a>
+				<a class="dot" style="top:89px;  left:386px;" continent="AS" city="tianjin"></a>
+				<a class="dot" style="top:195px; left:153px;" continent="SA" city="puntaarenas"></a>
+				<a class="dot" style="top:96px;  left:320px;" continent="ME" city="buxoro"></a>
+				<a class="dot" style="top:113px; left:343px;" continent="ME" city="anakapalle"></a>
+				<a class="dot" style="top:110px; left:299px;" continent="ME" city="albahr"></a>
+				<a class="dot" style="top:84px;  left:257px;" continent="EU" city="rome"></a>
+				<a class="dot" style="top:76px;  left:273px;" continent="EU" city="warszawa"></a>
+
+
+				<form id="mapform" name="mapform" method="post" action="" class="form_continent">
+
+					
+						<select name="continent" id="continent">
+							<option value="AF">Africa</option>
+							<option value="AS">Asia</option>
+							<option value="AU">Australia</option>
+							<option value="EU">Eurpoe</option>
+							<option value="NA">North America</option>
+							<option value="ME">Middle East</option>
+							<option value="SA">South America</option>
+							<option value="ALL" selected="selected">Show all continents</option>
+						</select>
+					
+				</form>
+
+				<div class="detail_container">
+
+					<div class="city_detail">
+
+						
+
+						
+						<div class="city_info" style="width:  200px"> <!-- setting width only for starting -->
+
+							
+							<h3>Choose a city</h3>
+							<p>Description</p>
+
+						</div>
+
+						<div class="clear_both"></div>
+						
+					</div>
+
+				</div>
+			</div>
+
+			<div class="city_detail_container">
+	<!-- City -->
+	<div class="city_detail" id="sydney">
+		<img class="city_photo" src="images/cities/sydney.jpg" alt="sydney" width="75" height="75" />
+		<div class="city_info">
+			<h2>Sydney</h2>
+			<h3>Australia</h3>
+			<p>Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo. Praesent eu elit. Ut eu ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos commodo in interdum vitae leo.</p>
+		</div>
+	</div>
+	
+	<!-- City -->
+	<div class="city_detail" id="london">
+		<img class="city_photo" src="images/cities/london.jpg" alt="sydney" width="75" height="75" />
+		<div class="city_info">
+			<h2>London</h2>
+			<h3>Europe</h3>
+			<p>Curabitur fringilla. Nunc est ipsum, pretium quis, dapibus sed, varius non, lectus. Proin a quam. Praesent lacinia, eros quis aliquam porttitor, urna lacus volutpat urna, ut fermentum neque mi egestas dolor.</p>
+		</div>
+	</div>
+	
+	<!-- City -->
+	<div class="city_detail" id="riodejaneiro">
+		<img class="city_photo" src="images/cities/riodejaneiro.jpg" alt="rio de janerio" width="75" height="75" />
+		<div class="city_info">
+			<h2>Rio de Janerio</h2>
+			<h3>South America</h3>
+			<p>Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum.</p>
+		</div>
+	</div>
+	
+	<!-- City -->
+	<div class="city_detail" id="tokyo">
+		<img class="city_photo" src="images/cities/tokyo.jpg" alt="brazil" width="75" height="75" />
+		<div class="city_info">
+			<h2>Tokyo</h2>
+			<h3>Asia</h3>
+			<p>Donec porttitor ligula eu dolor. Maecenas vitae nulla nam consectetuer. Lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum.</p>
+		</div>
+	</div>
+	
+	<!-- City -->
+	<div class="city_detail" id="johannesburg">
+		<img class="city_photo" src="images/cities/johannesburg.jpg" alt="johannesburg" width="75" height="75" />
+		<div class="city_info">
+			<h2>Johannesburg</h2>
+			<h3>Africa</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	<!-- City -->
+	<div class="city_detail" id="johannesburg">
+		<img class="city_photo" src="images/cities/johannesburg.jpg" alt="johannesburg" width="75" height="75" />
+		<div class="city_info">
+			<h2>Johannesburg</h2>
+			<h3>Africa</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	<!-- City -->
+	<div class="city_detail" id="dallas">
+		<img class="city_photo" src="images/cities/dallas.jpg" alt="dallas" width="75" height="75" />
+		<div class="city_info">
+			<h2>Dallas</h2>
+			<h3>North America</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="seattle">
+		<img class="city_photo" src="images/cities/seattle.jpg" alt="seattle" width="75" height="75" />
+		<div class="city_info">
+			<h2>Seattle</h2>
+			<h3>North America</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="perth">
+		<img class="city_photo" src="images/cities/perth.jpg" alt="perth" width="75" height="75" />
+		<div class="city_info">
+			<h2>Perth</h2>
+			<h3>Australia</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="tripoli">
+		<img class="city_photo" src="images/cities/tripoli.jpg" alt="tripoli" width="75" height="75" />
+		<div class="city_info">
+			<h2>Tripoli</h2>
+			<h3>Africa</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="bogota">
+		<img class="city_photo" src="images/cities/bogota.jpg" alt="bogota" width="75" height="75" />
+		<div class="city_info">
+			<h2>Bogot&aacute;</h2>
+			<h3>South America</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="newyorkcity">
+		<img class="city_photo" src="images/cities/newyorkcity.jpg" alt="newyorkcity" width="75" height="75" />
+		<div class="city_info">
+			<h2>New York City</h2>
+			<h3>North America</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="phnompenh">
+		<img class="city_photo" src="images/cities/phnompenh.jpg" alt="phnompenh" width="75" height="75" />
+		<div class="city_info">
+			<h2>Phnom Penh</h2>
+			<h3>Asia</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper pharetra posuere.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="tianjin">
+		<img class="city_photo" src="images/cities/tianjin.jpg" alt="tianjin" width="75" height="75" />
+		<div class="city_info">
+			<h2>Tianjin</h2>
+			<h3>Asia</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="puntaarenas">
+		<img class="city_photo" src="images/cities/puntaarenas.jpg" alt="puntaarenas" width="75" height="75" />
+		<div class="city_info">
+			<h2>Punta Arenas</h2>
+			<h3>South America</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="buxoro">
+		<img class="city_photo" src="images/cities/buxoro.jpg" alt="buxoro" width="75" height="75" />
+		<div class="city_info">
+			<h2>Buxoro</h2>
+			<h3>Middle East</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="anakapalle">
+		<img class="city_photo" src="images/cities/anakapalle.jpg" alt="anakapalle" width="75" height="75" />
+		<div class="city_info">
+			<h2>Anakapalle</h2>
+			<h3>Middle East</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="albahr">
+		<img class="city_photo" src="images/cities/albahr.jpg" alt="albahr" width="75" height="75" />
+		<div class="city_info">
+			<h2>Al Bahr</h2>
+			<h3>Middle East</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="rome">
+		<img class="city_photo" src="images/cities/rome.jpg" alt="rome" width="75" height="75" />
+		<div class="city_info">
+			<h2>Rome</h2>
+			<h3>Europe</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+	
+	<!-- City -->
+	<div class="city_detail" id="warszawa">
+		<img class="city_photo" src="images/cities/warszawa.jpg" alt="warszawa" width="75" height="75" />
+		<div class="city_info">
+			<h2>Warszawa</h2>
+			<h3>Europe</h3>
+			<p>Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper.</p>
+		</div>
+		<div class="clear_both"></div>
+	</div>
+	
+</div>
+		
+	</body>
+</html>

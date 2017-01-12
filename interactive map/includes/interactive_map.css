@@ -1,0 +1,116 @@
+
+.map_container{
+
+	width: 760px;
+	height: 325px;
+	font-family: Arial;
+	font-size: 12px;
+	float: right;
+	padding: 0;
+	margin: 0 0 0 20px;
+	background:url(../images/template/map.jpg) no-repeat 0px 0px;
+	position: relative;
+	border-style: solid;
+	border-color: red;
+}
+
+.map_container a.dot{
+
+	width: 20px;
+	height: 20px;
+	display: block;
+	background:url(../images/template/dots.png) no-repeat 0px 0px;
+	cursor: pointer;
+	position: absolute;
+	
+}
+
+.map_container a.dot:hover{
+
+	background-position: 0px -20px;
+}
+
+.map_container a.dot.selected{
+
+	background-position: 0px -40px;
+}
+
+.map_container .form_continent{
+
+	position: absolute;
+	top: 265px;
+	left: 30px;
+}
+
+.map_container .detail_container{
+
+	position: absolute;
+	top: 35px;
+	left: 480px;
+	width: 240px;
+	height: 260px;
+
+	
+
+}
+
+.map_container .city_detail{
+
+	position: absolute;
+	top: 0;
+	width: 230px;
+	padding: 10px 0 0 12px;
+	border-left: solid 1px #a9b5cb;
+	border-top: solid 1px #a9b5cb;
+	border-radius: 10px;
+
+
+}
+
+.map_container .clear_both{
+
+	clear: both;
+}
+
+.map_container .city_photo{
+
+	float: left;
+	width: 75px;
+	margin: 0 15px 0 0;
+	border: solid #fff;
+	border-radius: 8px;
+	box-shadow: 0px 5px 3px #4e5e74;
+
+}
+
+.map_container .city_info{
+
+	float: left;
+	
+}
+
+.map_container .city_info h2{
+
+	margin: 0;
+	
+	font-size: 18px;
+}
+
+.map_container .city_info h3{
+
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2c3748;
+	letter-spacing: 4px;
+	margin: 0 0 12px 0px;
+}
+
+.map_container .city_info p{
+
+	margin: 0 0 12px 0;
+}
+
+.city_detail_container{
+
+	display: none;
+}
