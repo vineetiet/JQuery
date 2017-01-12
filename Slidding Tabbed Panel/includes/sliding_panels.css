@@ -1,0 +1,148 @@
+.sp p{
+
+	font-size: 1em;
+	margin: 0 0 1em 0;
+
+
+}
+
+.sp h2{
+
+	font-size: 1.15em;
+	margin: 0 0 .5em 0;
+}
+
+.sp{
+
+	width: 500px;
+	float: right;
+	margin: 0 0 10px 25px;
+	position: relative;
+}
+
+.tabs{
+
+	position: relative;
+	z-index: 101;
+
+}
+
+.tabs span{
+
+	margin: 0;
+	padding: 8px 12px 8px 12px;
+	display: inline-block;
+	position: relative;
+	background:#fff;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	cursor: pointer;
+
+}
+
+.tabs span:first-child{
+
+	padding-left: 15px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top-left-radius: 12px;
+
+}
+
+.tabs span:last-child{
+
+	padding-right: 15px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top-right-radius: 12px;
+
+}
+
+.tabs span.selected{
+
+	color: #999;
+	border-bottom: 1px solid #fff;
+
+}
+
+.panel_container{
+
+	background-color: #fff;
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+	top: -1;
+	border-top: solid 1px #ccc;
+
+}
+
+.panel_content{
+
+	padding: 15px;
+
+}
+
+.panels{
+
+	position: absolute;
+	top: 0px;
+}
+
+.panel{
+
+	position: absolute;
+	height: 400px;
+}
+
+.tabs .video.selected{
+
+	color: #ffce6f;
+	background-color: #3a3563;
+	border-bottom: solid 1px #354e5c;
+
+
+}
+
+.panels .video{
+
+	background: url(../images/video_background.jpg) no-repeat 0px 0px;
+}
+
+.panels .video .panel_content{
+
+	margin-right: 126px;
+}
+
+.panels .video .panel_content h2{
+
+	color: #000;
+
+}
+
+.panels .video .panel_content p{
+
+	color: #fff;
+}
+
+.panels .video .panel_content a{
+
+	color: #ffce6f;
+}
+
+
+<!-- CSS snippet -->
+
+
+.sp .tabs .ipad.selected { color: #fff; background-color: #8dbc52; border-bottom: 1px solid #8dbc52; }
+.sp .panels .ipad { background: url(../images/ipad_background.jpg) no-repeat 0px 0px; }
+.sp .panels .ipad h2 { color: #fff; }
+.sp .panels .ipad p { color: #284108; margin-right: 150px; }
+.sp .panels .ipad a { color: #fff; }
+
+.sp .tabs .photo.selected { color: #fff; background-color: #000; border-bottom: 1px solid #000; }
+.sp .panels .photo { background: url(../images/photo_background.jpg) no-repeat 0px 0px; }
+.sp .panels .photo .panel_content { margin-right: 150px; }
+.sp .panels .photo h2 { color: #fff; }
+.sp .panels .photo p { color: #fff; }
+.sp .panels .photo a { color: #ffcc00; }
+.sp .panels .thumbnail { border: 1px solid #fff; }
